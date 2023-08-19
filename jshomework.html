@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // //შექმენით პროგრამა რომელიც შეეკიტხება მომხმარებელს მის ასაკს და ასაკის მიხედვით კონსოლშ დალოგავს შედეგებს.
+    let age = prompt();
+    if (age < 18) {
+        console.log("you are minor");
+    }
+    else if(age > 18 && age < 64){
+        console.log("You are an adult");
+    }
+    else{
+        console.log("you are a senior");
+    }
+
+
+    // //2)  შექმენით თქვენი საყვარელი ფილმების მასივი და დაამატეთ რამდენიმე ფუნქციონალი
+    let arr = ["pulpPiction", "theLakeHouse", "theShining", "fightClub", "theMatrix", "seven", "unforgettable", "toTheBone", "theGift"];
+    console.log(arr)
+    arr.push("matrix2", "matrix3");
+    console.log(arr);
+    arr.pop();
+    console.log(arr);
+    arr.unshift("matrix2", "matrix3");
+    console.log(arr);
+    arr.shift();
+    console.log(arr);
+
+
+    //3) შექმენით სტუდენტი ობიექტი რომელიც შეიცავს name, age, grade
+     let student ={
+         name:"natali",
+         age:27,
+         grade:100,
+     }
+     student.grade = 99;
+     console.log(student);
+
+
+    //4) შექმენით მანქანის ობიექტი რომელიც შეიცავს brand, model, year ფროფერთებს.
+    let car ={
+        brand:"ford",
+        model:"mustang",
+        year:2020,
+    }
+    console.log(`This is ${car.year} ${car.brand} ${car.model} car`);
+    car.isSportCar = true;
+    console.log(car)
+
+</script>
+</body>
+</html>
